@@ -1,0 +1,27 @@
+{
+  "name": "flash-protocol-system-tron",
+  "version": "1.0.0",
+  "description": "Sistema de Protocolo Flash para TRON",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx hardhat run scripts/menu.js --network tron",
+    "deploy": "hardhat run scripts/deploy.js --network tron",
+    "compile": "hardhat compile",
+    "clean": "hardhat clean"
+  },
+  "dependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@openzeppelin/contracts": "^5.2.0",
+    "chalk": "^4.1.2",
+    "dotenv": "^16.4.7",
+    "ethers": "^6.13.5",
+    "hardhat": "^2.22.19",
+    "inquirer": "^8.2.6",
+    "moment-timezone": "^0.5.47",
+    "solc": "^0.8.20",
+    "tronweb": "^5.3.0"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-etherscan": "^3.1.8"
+  }
+}
